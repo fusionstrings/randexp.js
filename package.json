@@ -16,19 +16,21 @@
   },
   "author": "fent (https://github.com/fent)",
   "main": "./lib/randexp.cjs",
-  "module": "./lib/randexp.js",
+  "module": "./dist/randexp.js",
   "exports": {
-    "import": "./lib/randexp.js",
+    "import": "./dist/randexp.js",
     "require": "./lib/randexp.cjs"
   },
   "files": [
+    "dist",
     "lib",
     "types/index.d.ts"
   ],
   "scripts": {
     "version_": "gulp build && git add build",
     "test": "istanbul cover node_modules/.bin/_mocha -- test/*-test.js",
-    "dtslint": "dtslint types --onlyTestTsNext"
+    "dtslint": "dtslint types --onlyTestTsNext",
+    "build": "jspm build ./lib/randexp.js"
   },
   "directories": {
     "lib": "./lib"
