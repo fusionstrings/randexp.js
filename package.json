@@ -17,10 +17,10 @@
   "author": "fent (https://github.com/fent)",
   "main": "./lib/randexp.cjs",
   "module": "./lib/randexp.js",
-	"exports": {
-		"import": "./lib/randexp.js",
-		"require": "./lib/randexp.cjs"
-	},
+  "exports": {
+    "import": "./lib/randexp.js",
+    "require": "./lib/randexp.cjs"
+  },
   "files": [
     "lib",
     "types/index.d.ts"
