@@ -1,5 +1,5 @@
 {
-  "name": "randexp",
+  "name": "@fusionstrings/randexp",
   "description": "Create random strings that match a given regular expression.",
   "keywords": [
     "regex",
@@ -8,14 +8,19 @@
     "random",
     "test"
   ],
-  "version": "0.5.3",
+  "version": "0.0.0",
   "homepage": "http://fent.github.io/randexp.js/",
   "repository": {
     "type": "git",
     "url": "git://github.com/fent/randexp.js.git"
   },
   "author": "fent (https://github.com/fent)",
-  "main": "./lib/randexp.js",
+  "main": "./lib/randexp.cjs",
+  "module": "./lib/randexp.js",
+	"exports": {
+		"import": "./lib/randexp.js",
+		"require": "./lib/randexp.cjs"
+	},
   "files": [
     "lib",
     "types/index.d.ts"
@@ -47,5 +52,6 @@
     "node": ">=8"
   },
   "license": "MIT",
-  "types": "./types"
+  "types": "./types",
+  "type": "module"
 }
